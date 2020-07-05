@@ -1,8 +1,5 @@
 ro.product.brand=lenovo
-ro.product.name=kunlun2
-ro.product.device=kunlun2
 ro.product.mod_device=kunlun2_global
-ro.build.product=kunlun2
 ro.treble.enabled=true
 sys.usb.rndis.func.name=rndis_bam
 sys.usb.rmnet.func.name=rmnet_bam

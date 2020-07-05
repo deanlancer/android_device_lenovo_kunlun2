@@ -36,6 +36,10 @@ on fs
     chmod 0664 /dev/ion
     chown system system /dev/ion
     install_keyring
+    
+on early-init
+    # Enable double-tap to wake
+    write /sys/devices/virtual/touch/tp_dev/gesture_on 1
 
 on init
     mkdir /system/bin
@@ -99,6 +103,10 @@ service keymaster-4-0 /sbin/android.hardware.keymaster@4.0-service-qti
 
 on boot
     setprop sys.usb.config adb
+
+# Touchscreen
+	chown system system /sys/class/touch/tp_dev/gesture_on
+	chown 0660 /sys/class/touch/tp_dev/gesture_on
 
 on property:hwservicemanager.ready=true
     start sbinqseecomd

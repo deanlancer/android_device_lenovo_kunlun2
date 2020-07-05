@@ -29,6 +29,12 @@ PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo L38111
 PRODUCT_MANUFACTURER := Lenovo
 
+#Instead of .prop
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=kunlun2 \
+    BUILD_PRODUCT=kunlun2 \
+    TARGET_DEVICE=kunlun2
+
 # enable stock zip packages flash
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.secure=1 \
