@@ -164,6 +164,7 @@ SHRP_STATUSBAR_RIGHT_PADDING := 40
 SHRP_STATUSBAR_LEFT_PADDING := 40
 # SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock
 SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
 # Recovery Type (It can be treble,normal,SAR) [Only for About Section]
 SHRP_REC_TYPE := Treble
 SHRP_DEVICE_TYPE := A/B
