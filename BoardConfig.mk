@@ -171,6 +171,20 @@ SHRP_DEVICE_TYPE := A/B
 
 BUILD_SHRP_REC := true
 
+#SHRP Addons
+SHRP_EXTERNAL_ADDON_PATH := "device/lenovo/kunlun2/addon/"
+SHRP_EXTERNAL_ADDON_1_NAME := "SELinux Permissiver"
+SHRP_EXTERNAL_ADDON_1_INFO := "Makes SELinux Permissive"
+SHRP_EXTERNAL_ADDON_1_FILENAME := "permissiver.zip"
+SHRP_EXTERNAL_ADDON_1_BTN_TEXT := "Flash"
+SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := "Flashed Successfully"
+SHRP_INC_IN_REC_EXTERNAL_ADDON_1 := true
+SHRP_EXTERNAL_ADDON_2_NAME := "SELinux Enforcer"
+SHRP_EXTERNAL_ADDON_2_INFO := "Reverts Back to Enforcing SELinux"
+SHRP_EXTERNAL_ADDON_2_FILENAME := "enforcer.zip"
+SHRP_EXTERNAL_ADDON_2_BTN_TEXT := "Flash"
+SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := "Flashed Successfully"
+
 # supress error messages while building
 ALLOW_MISSING_DEPENDENCIES := true
 
